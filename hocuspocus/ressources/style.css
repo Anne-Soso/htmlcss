@@ -201,7 +201,7 @@ filter: hue-rotate(30deg);
 }
 
 .mainTitle{
-    padding:60px 0 0;
+    padding:40px 0 0;
     text-align: center;
     font-weight: 100;
     font-size: 3.5rem;
@@ -238,10 +238,18 @@ filter: hue-rotate(30deg);
     font-size:2rem;
     padding: 10px;
     color: #745ad7;
+    display: block;
+    transform:rotate(359deg);
+    transition: all 1s;
+}
+.fixedFooter li a:hover{
+transform: rotate(0deg);
+
 }
 .footer{
-    background: rgb(51, 47, 56);
+    background: #332f38;
     padding:20px 0;
+    margin: 70px 0 0 0;
     display: flex;
     justify-content: center;
 }
@@ -287,4 +295,119 @@ padding-left:60px;
     padding:8px 0;
     text-decoration: none;
 
+}
+.rightLinks a:hover ,.leftLinks a:hover,.mailFooter:hover,.telFooter:hover{
+    color: #9a6fff;
+}
+.contact{
+    display:flex;
+    align-content: center;
+    justify-content:center;
+    align-items:center;
+    padding:0 0 100px 0;
+
+}
+.contactImg{
+    width: 400px; 
+    margin: 0 50px;
+
+}
+.contact form{
+flex:0 0 35%;
+}
+
+.contact label{
+    display: block;
+    font-size:1.6rem;
+    margin:0 0 1rem 0;
+}
+.contact form div{
+    margin:0 0 2rem;
+}
+.contact input{
+    display: block;
+    width:90%;
+    font-size:1.3rem;
+    border:1 px solid gray;
+    
+}
+.contact textarea{
+    width:100%;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border:1 px solid gray;
+}
+.contact .button{
+    font-size: 1.3rem;
+    background: #745ad7;
+    color:white;
+    border:none;
+    transition: all 0.5s;
+    padding:1rem 2rem;
+}
+.contact .button i{
+    margin: 0 0 0 10px;
+}
+.contact .button:hover{
+    background: white;
+    color:#745ad7;
+    border:1px solid #745ad7;
+}
+.contact div i{
+    float:left;
+    width:10%;
+    box-sizing: border-box;
+    padding:10px 0;
+    border:1px solid gray;
+    border-width:1px 0px 1px 1px;
+    height:40px;
+    text-align: center;
+    font-size:1.6rem;
+    display: block;
+}
+.contact div{
+    overflow: hidden;
+}
+.contact div input{
+    height:40px;
+    border-radius:0px;
+    border:1px solid gray;
+    box-sizing: border-box;
+    float:left;
+}
+
+.about p{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+p.quote{
+     font-size:1.8rem;
+    font-weight: 700;
+    z-index:20;
+    position: relative;
+}
+p.quote:before{
+    content:" ";
+    width:60px;
+    height:70px;
+    z-index:0;
+    background: url('chaudron.png');
+    display: block;
+    filter:sepia(1);
+    opacity: 0.7;
+    position: absolute;
+    top:-30px ;
+    left:-40px;
+    background-size: cover;
+}
+.about{
+    padding:0 0 50px 0;
+}
+.aboutImage{
+    width:75%;
+    filter: grayscale(0.8) hue-rotate(80deg);
+    margin:1rem auto 5rem;
+    display: block;
 }
