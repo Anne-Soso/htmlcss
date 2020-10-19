@@ -324,6 +324,7 @@ flex:0 0 35%;
 .contact form div{
     margin:0 0 2rem;
 }
+
 .contact input{
     display: block;
     width:90%;
@@ -365,6 +366,11 @@ flex:0 0 35%;
     text-align: center;
     font-size:1.6rem;
     display: block;
+    transition: all 0.5s;
+}
+.contact div:hover i{
+    background-color: #745ad7;
+    color:white;
 }
 .contact div{
     overflow: hidden;
@@ -410,4 +416,30 @@ p.quote:before{
     filter: grayscale(0.8) hue-rotate(80deg);
     margin:1rem auto 5rem;
     display: block;
+}
+
+.news{
+    display: flex;
+    justify-content: space-between;
+
+}
+.newsImage{
+    height:170px;
+    width:100%;
+    background-size: cover;
+}
+.newsImage1{
+    background: url(image4.jpg) center center;
+}
+.newsImage2{
+    background: url(image7.jpg) center center;
+}
+.newsImage3{
+    background: url(image8.jpg)center center;
+}
+.newItem{
+    border:1px solid gray;
+    flex: 0 0 28%;
+
+    height:300px;
 }
