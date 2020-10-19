@@ -1,8 +1,12 @@
 html{
     font-size:14px;
+    padding:0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 body{
-    background-color:gray;
+    background-color:white;
+    padding:0;
+    margin:0;
 }
 body:scroll nav{
     display: none;
@@ -19,12 +23,12 @@ body:scroll nav{
     }
     25%{
         filter: saturate(2) invert(70%);
-        transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(3deg);
 
     }
     50%{
         filter: saturate(2) invert(90%) hue-rotate(190deg);
-        transform: scale(0.9) rotate(-10deg);
+        transform: scale(0.9) rotate(-5deg);
     }
     100%{
         filter: saturate(1) invert(0);
@@ -42,6 +46,7 @@ body:scroll nav{
 }
 header{
     position:fixed;
+    z-index:100;
     top:0px;
     overflow: hidden;
     left:0px;
@@ -110,4 +115,173 @@ header nav a:before{
 header nav a:hover:before{
     width:100%;
     left:0;
+}
+
+main{
+    padding:150px 0 60px 0;
+}
+
+.homeGal{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+.navGal{
+    flex:0 0 25%;
+    padding-top:25%;
+    position: relative;
+    background-size: cover;
+    filter: grayscale(0.85) contrast(1.3);
+    opacity: 0.9;
+    overflow:hidden;
+    box-sizing: border-box;
+    height:100%;
+    transition: all 0.5s;
+}
+.navGal:hover{
+filter: hue-rotate(30deg);
+}
+.navGal-1{
+    background: url('image1.jpg');
+}
+.navGal-2{
+    background: url('image2.jpg');
+}
+.navGal-3{
+    background: url('image3.jpg');
+}
+.navGal-4{
+    background: url('image4.jpg');
+}
+.navGal-5{
+    background: url('image5.jpg');
+}
+.navGal-6{
+    background: url('image6.jpg');
+}
+.navGal-7{
+    background: url('image7.jpg');
+}
+.navGal-8{
+    background: url('image8.jpg');
+}
+.navGal .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    width:100%;
+    height:30%;
+    bottom:0;
+    left:0;
+    margin:0;
+    display:flex;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.navGal:hover .overlay{
+    height:100%;
+}
+.navGal .overlay p{
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: 900;
+    width:100%; 
+    color: white;
+    font-size:2rem;
+}
+.navGal a{
+
+    display: block;
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+
+}
+
+.mainTitle{
+    padding:60px 0 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+
+.accueilMessage{
+    font-size:1.6rem;
+    text-align:center;
+    line-height: 1.4;
+    font-weight:400;
+    padding:0 0 100px 0;
+}
+.fixedFooter{
+    background: #e2e2e2;
+    position:fixed;
+    width:100%;
+    height:60px;
+    bottom:0;
+    left:0;
+}
+.fixedFooter nav ul{
+    display: flex;
+    padding:0;
+    align-content: center;
+    justify-content: center;
+}
+.fixedFooter li{
+    list-style: none;
+}
+.fixedFooter li a{
+    font-size:2rem;
+    padding: 10px;
+    color: #745ad7;
+}
+.footer{
+    background: rgb(51, 47, 56);
+    padding:20px 0;
+    display: flex;
+    justify-content: center;
+}
+.logoFooter{
+    width:200px;
+    display: block;
+    margin:0 auto;
+}
+.mailFooter,.telFooter{
+display:block;
+padding:10px 0;
+text-align: center;
+color:white;
+text-decoration: none;
+font-size:1.6rem;
+}
+.footerContact{
+    padding: 0 40px;
+}
+.mailFooter i, .telFooter i{
+    margin: 0 10px 0 0;
+}
+
+.leftLinks{
+    border-right:1px solid white;
+    padding-right:60px;
+}
+
+.rightLinks{
+border-left: 1px solid white;
+padding-left:60px;
+}
+.rightLinks li,.leftLinks li{
+    list-style-type: none;
+}
+.rightLinks ul,.leftLinks ul{
+    padding:0;
+}
+.rightLinks a ,.leftLinks a{
+    color:white;
+    font-size: 1.3rem;
+    display: block;
+    padding:8px 0;
+    text-decoration: none;
+
 }
