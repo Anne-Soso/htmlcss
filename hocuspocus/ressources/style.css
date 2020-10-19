@@ -206,6 +206,9 @@ filter: hue-rotate(30deg);
     font-weight: 100;
     font-size: 3.5rem;
 }
+.mainTitle i{
+    color: #745ad7;
+}
 
 .accueilMessage{
     font-size:1.6rem;
