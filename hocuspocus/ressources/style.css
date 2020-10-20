@@ -46,7 +46,7 @@ body:scroll nav{
 }
 header{
     position:fixed;
-    z-index:100;
+    z-index:1000;
     top:0px;
     overflow: hidden;
     left:0px;
@@ -569,4 +569,88 @@ p.quote:before{
 }
 .ingredients{
     display: flex;
+    justify-content: space-between;
+}
+
+.menuCateg{
+    flex:0 0 29%;
+}
+.menuCateg ul {
+    padding:0
+}
+.menuCateg li{
+    list-style-type: none;
+
+}
+.menuCateg a{
+    display: block;
+    border-bottom:1px solid rgb(124, 124, 124);
+    padding: 15px 0;
+    font-size:1.4rem;
+    color:gray;
+    text-decoration: none;
+    transition:all 0.3s;
+}
+.menuCateg a:hover{
+    color:#745ad7;
+    padding-left:10px;
+}
+
+
+.menuCateg h2{
+    background-color: #745ad7;
+    color:white;
+    margin:0;
+    font-weight:400;
+    padding:10px 20px;
+}
+.categs{
+    flex:0 0 68%;
+}
+.categs ul{
+    display:flex;
+    padding:0;
+    flex-wrap: wrap;
+    margin:0;
+    justify-content: space-around;
+}
+.categs li{
+    flex:0 0 30%;
+    list-style: none;
+    margin: 0 0 2rem 0;
+    text-align:center;
+}
+.categs li a {
+    display: block;
+    padding: 2rem 0 0 0;
+    text-decoration: none;
+    background-color: white;
+    color: #745ad7;
+    border: 1px solid rgb(189, 189, 189);
+
+}
+.categs li h2{
+    font-weight:400;
+}
+.categs li a:hover{
+    animation-duration: 0.7s;
+    animation-name: categanim;
+
+}
+.categs li img{
+    height:100px;
+    filter: grayscale(50%) hue-rotate(20deg);
+}
+@keyframes categanim{
+    0%{
+
+    }
+    25%{
+        transform:rotate(-2deg);
+    }
+    50%{
+        transform:rotate(2deg);
+
+    }
+ 
 }
