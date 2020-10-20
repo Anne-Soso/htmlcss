@@ -567,3 +567,6 @@ p.quote:before{
     margin: 1.5rem 0 0 0;
     overflow:auto;
 }
+.ingredients{
+    display: flex;
+}
